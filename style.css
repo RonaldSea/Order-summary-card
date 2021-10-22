@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    /* Primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --white : #ffffff;
+
+    /* Neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--pale-blue);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--white);
+}
+
+.card-header img {
+    width: 100%;
+}
+
+.title {
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.desaturated-blue {
+    color: var(--desaturated-blue);
+}
+
+.text {
+    width: 80%;
+    font-size: 15px;
+    text-align: center;
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    background-color: var(--very-pale-blue);
+}
+
+.anual-plan p:first-child{
+    font-weight: 700;
+}
+
+.anual-plan p{
+    margin: 0;
+}
+
+.change {
+    font-weight: 700;
+    color: var(--bright-blue);
+}
+
+.change:hover {
+    color: #766cf1;
+}
+
+.button {
+    width: 90%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.payment-button {
+    background-color: var(--bright-blue);
+    color: var(--white);
+    box-shadow: 0 15px 25px 0px rgba(0,0,0,0.2);
+}
+
+.payment-button:hover {
+    background-color: #766cf1;
+}
+
+.cancel-button {
+    background-color: transparent;
+    color: var(--desaturated-blue);
+    
+}
+
+.attribution {
+    text-align: center;
+}
